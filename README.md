@@ -4,6 +4,10 @@ This project was created for demonstartion of incorrect work of dnd-kit with yar
 
 If you run app, you will see, that dnd does not work.
 
+### Live demo
+
+https://akhmadullin.github.io/dnd-kit-demo-yarn-2-broken/
+
 Debugging shows, that the reason of this bug is different `DndContext` in `useDraggable` and `useDroppable` hooks (different from App `DndContext`).
 This happens because of Yarn 2 dependencies resolving mechanism - we have 2 different `@dnd-kit/core` in our App (check `yarn.lock` file).
 
